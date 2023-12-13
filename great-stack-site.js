@@ -1,7 +1,7 @@
 let tabLinks = document.getElementsByClassName('tab-links');
 let tabContents = document.getElementsByClassName('tab-contents');
 
-function opentab(tabName) {
+function opentab(tabName, event) {
   for (let tabLink of tabLinks) {
     tabLink.classList.remove('active-link');
   }
@@ -13,6 +13,14 @@ function opentab(tabName) {
   event.currentTarget.classList.add('active-link');
   document.getElementById(tabName).classList.add('active-tab');
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  for (let tabLink of tabLinks) {
+    tabLink.addEventListener('click', function (e) {
+      opentab(tabLink.getAttribute('data-tab'), e);
+    });
+  }
+});
 
 /* side menu*/
 
