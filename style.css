@@ -21,6 +21,20 @@ header {
   background-position: center;*/
 }
 
+/* Responsive Image Style */
+.header-text .button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the image and buttons */
+  gap: 15px; /* Space between image and buttons */
+}
+
+.profile_pic {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
 .btn3 {
   display: block;
 
@@ -109,9 +123,10 @@ nav ul li a:hover::after {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  clear: both;
 }
 
-about-col-1 {
+.about-col-1 {
   flex-basis: 35%;
 }
 
