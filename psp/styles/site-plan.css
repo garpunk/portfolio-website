@@ -246,6 +246,9 @@ button {
   margin-left: 0.5em;
 }
 
+ul {
+  list-style-type: none;
+}
 #feedback {
   background-color: antiquewhite;
   position: absolute;
