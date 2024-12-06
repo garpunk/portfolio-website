@@ -46,6 +46,40 @@ body {
   margin: 0 auto;
   width:50%;
 } 
+
+.author_pic {
+  grid-column: 2 / 3; /* Spans from column line 2 to 3 */
+  grid-row: 1 / 2;   /* Spans row 1 */
+  position: relative; /* Ensure it serves as a containing block for absolutely positioned children */
+}
+
+.contact_hover {
+  position: absolute; /* Ensure overlay aligns with the parent */
+  top: 0;
+  left: 0;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: var(--nav-hover-background-color);
+}
+.author_pic:hover .contact_hover {
+   opacity: 1;
+}
+
+.contact_link {
+  color: white;
+  font-size: 50px;
+  font-family: var(--heading-font);
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font), sans-serif;
   color: var(--headline-color-on-white);
