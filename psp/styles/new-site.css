@@ -65,7 +65,7 @@ body {
   background-color: var(--nav-hover-background-color);
 }
 .author_pic:hover .contact_hover {
-   opacity: 1;
+   opacity: 0.85;
 }
 
 .contact_link {
@@ -79,6 +79,13 @@ body {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.contact_link a {
+  text-decoration: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font), sans-serif;
