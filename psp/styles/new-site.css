@@ -34,7 +34,6 @@ body {
 
   margin: 0;
   padding: 0;
- /* max-width: 1600px; */
   font-size: larger;
   text-align: center;
   background-color: #080808;
@@ -44,13 +43,13 @@ body {
  .wire_img {
   display: block;
   margin: 0 auto;
-  width:50%;
+  width:60%;
 } 
 
 .author_pic {
   grid-column: 2 / 3; /* Spans from column line 2 to 3 */
   grid-row: 1 / 2;   /* Spans row 1 */
-  position: relative; /* Ensure it serves as a containing block for absolutely positioned children */
+  position: relative; 
 }
 
 .contact_hover {
@@ -154,9 +153,7 @@ nav {
     padding: 0px;
   }
 
- .home-image {
-    border: none;
-  }
+ 
 
 
   nav a {
@@ -278,4 +275,35 @@ footer p {
   font-size: x-large;
   width: 20%;
   margin: 0 auto;
+}
+
+button {
+  display: inline-block;
+  text-decoration: none;
+  padding:  5px 10px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 8px;
+  color: var(--nav-link-color);
+  background-color: transparent; /* Optional for better design */
+  line-height: 1;
+  width: 40%;
+
+
+}
+
+button:hover {
+  
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+  
+}
+
+
+
+label {
+  font-family: "Poppins", sans-serif;
+}
+
+form {
+  border-color: #12d7cd;
 }
